@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
-      <div className="w-full h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+      <div className="w-full h-screen bg-gradient-to-r from-black/30 via-black/50 to-black/60">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* Title */}
           <motion.h1
@@ -20,8 +20,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Crafting Ideas <br /> Into{" "}
+            <span className="text-accent">Digital Realms</span>
           </motion.h1>
           <motion.p
             variants={fadeIn("down", 0.3)}
@@ -30,9 +30,11 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem imotion.sum dolor sit amet consectetur adipisicing elit.
-            Itaque nostrum quam reprehenderit vero, tentur voluptatem nulla aut
-            aspernatur dolores ut.
+            As a Computer Engineer, I specialize in transforming visionary ideas
+            into tangible digital realities. With expertise in web development
+            and software engineering, I create innovative and seamless user
+            experiences. Let&apos;s bring your ideas to life and embark on a
+            transformative journey together.
           </motion.p>
           {/* button */}
           <div className="flex justify-center xl:hidden relative">
