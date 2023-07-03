@@ -95,7 +95,7 @@ const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-screen bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-screen bg-primary/90 py-32 text-center xl:text-left">
       <Circles />
       {/* Avatar Image */}
       <motion.div
