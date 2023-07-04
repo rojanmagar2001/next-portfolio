@@ -7,7 +7,7 @@ import { fadeIn } from "../../variants";
 const Contact = () => {
   return (
     <div className="h-full bg-primary/60">
-      <div className="h-screen bg-gradient-to-r from-black/30 via-black/50 to-black/60 py-32 text-center xl:text-left">
+      <div className="h-screen  bg-gradient-to-r from-black/30 via-black/50 to-black/60 py-32 text-center xl:text-left">
         <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
           <div className="flex flex-col w-dull max-w-[700px]">
             {/* Text */}

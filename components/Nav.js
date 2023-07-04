@@ -45,16 +45,19 @@ const Nav = () => {
             >
               {/* ToolTip */}
               <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
-                <div className="bg-white relative flex text-primary items-center p-[6px] rounded-[3px]">
-                  <div className="text[12px] leading-none font-semibold capitalize">
+                <div className="bg-white/10 backdrop-blur-sm relative flex text-white/70 items-center p-[6px] rounded-[3px]">
+                  <div
+                    className="text-[14px] leading-none 
+                   capitalize"
+                  >
                     {link.name}
                   </div>
                   {/* triangle */}
-                  <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
+                  <div className="border-solid border-l-white/10 border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
                 </div>
               </div>
               {/* Icon */}
-              <div>{link.icon}</div>
+              <div className="text-2xl">{link.icon}</div>
             </Link>
           );
         })}
