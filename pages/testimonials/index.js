@@ -9,7 +9,7 @@ const Testimonials = () => {
             Reviews by <span className="text-accent">Loved</span> ones
           </h2>
           <div className="flex justify-between mt-10 gap-x-5">
-            <div className="hidden xl:flex flex-col items-center justify-center bg-white h-[475px] w-[495px] text-center rounded-lg">
+            <div className="hidden xl:flex flex-col items-center justify-center bg-white h-[475px] w-[495px] text-center rounded-lg p-5">
               <p className="text-black p text-sm">
                 Writing is a mesmerizing tapestry of words, skillfully woven
                 together to create a captivating symphony of emotions that
