@@ -18,9 +18,12 @@ const Work = () => {
       <div className="h-screen  bg-gradient-to-r from-black/30 via-black/50 to-black/60 py-32 text-center xl:text-left flex items-center justify-center">
         <Circles />
         <div className="container mx-auto">
-          <div className="flex flex-col xl:flex-row gap-x-8">
+          <div className="flex flex-col items-center xl:flex-row gap-x-8">
             {/* Text */}
-            <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-16 xl:mb-0">
+            <div
+              // style={{ width: "400px !important" }}
+              className="text-center flex  flex-col lg:text-left mb-16 xl:mb-0"
+            >
               <motion.h2
                 variants={fadeIn("up", 0.2)}
                 initial="hidden"
@@ -36,7 +39,11 @@ const Work = () => {
                 animate="show"
                 exit="hidden"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. sit amet, consectetur
+                adipiscing elit. sit amet, consectetur adipiscing elit.
               </motion.p>
             </div>
             <motion.div
@@ -44,7 +51,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="w-full"
+              className="w-[60%]"
             >
               <WorkSlider />
             </motion.div>

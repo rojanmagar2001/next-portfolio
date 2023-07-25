@@ -63,30 +63,31 @@ const WorkSlider = () => {
           spaceBetween: 15,
         },
         640: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 15,
         },
       }}
       freeMode={true}
       pagination={{ clickable: true }}
-      modules={[Pagination]}
+      modules={[Pagination, FreeMode]}
     >
       {workSlides.slides.map((slide, index) => {
         return (
-          <SwiperSlide key={index} className="mb-16">
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+          <SwiperSlide key={index} className="mb-16 w-full">
+            <div className="grid grid-cols-2 gap-8 cursor-pointer">
               {slide.images.map((image, index) => {
                 return (
                   <div
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                    className="relative  flex items-center justify-center group"
                     key={index}
                   >
                     <div className="flex items-center justify-center relative overflow-hidden">
                       <Image
                         src={image.path}
-                        width={500}
+                        width={550}
                         height={300}
                         alt={image.title}
+                        className="rounded-2xl"
                       />
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       {/* title */}
